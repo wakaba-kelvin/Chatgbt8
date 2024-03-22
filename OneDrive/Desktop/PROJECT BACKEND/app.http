@@ -1,0 +1,132 @@
+### - REGISTER A USER
+POST http://localhost:3000/api/employee/register
+Content-Type: application/json
+
+{
+    "FirstName": "kelvin",
+    "LastName": "kimani",
+    "Email": "kimaniii@gmail.com",
+    "Password": "12345678",
+    "Address": "678 Cherry Street",
+    "BirthDate": "1994-03-20",
+    "ContactInfo": "9871234560",
+    "Gender": "Male",
+    "Position": "HR Coordinator",
+    "PhotoURL": "https://example.com/olivia.jpg",
+    "HourlyRate": 49.00,
+    "GrossPay": 245,
+    "NHIFDeduction": 15.00,
+    "NSSFDeduction": 21.00,
+    "HELBDeduction": 12.00,
+    "Role": "Employee",
+    "ClockInTime": "08:00",
+    "ClockOutTime": "17:25"
+}
+
+
+#### - UPDATE EMPLOYEE
+PUT http://localhost:3000/api/employee/9e3d21b5-7678-4628-aa29-f39c01614e1e
+Content-Type: application/json
+
+{
+    "Role": "ADMIN"
+}
+
+#### - login 
+POST http://localhost:3000/api/employee/login
+Content-Type: application/json
+
+{
+    "Email": "kimaniii@gmail.com",
+    "Password": "12345678"
+}
+
+### - get all employeese
+GET http://localhost:3000/api/employee
+
+### get user by id
+GET http://localhost:3000/api/employee/8dcdff32-03d0-447c-9294-cb6479144ce9
+
+### delete employee
+DELETE  http://localhost:3000/api/employee/9d73aaf6-bb7f-4f5b-8fcc-12deb3c8a0c9
+
+##########################################################################################################
+### - TIME
+
+### Create time
+POST http://localhost:3000/api/createTime
+Content-Type: application/json
+
+{
+    "EmployeeID": "5f7a2d4f-a4e9-4c7b-beac-774cd2cd9204",
+    "ClockInTime": "08:30",
+    "ClockOutTime": "22:30",
+    "Rate": 10
+}
+
+### - get ALL TIMES
+GET http://localhost:3000/api/getTime
+
+
+### - get ALL TIMES BY ID
+GET http://localhost:3000/api/getTimeByEmployeeID/ef0dd005-d9d3-4686-9b4a-3ebc1a378083
+
+### update the time
+POST http://localhost:3000/api/updateTime
+Content-Type: application/json
+
+{
+    "EmployeeID": "8dcdff32-03d0-447c-9294-cb6479144ce9",
+    "ClockInTime": "08:00",
+    "ClockOutTime": "17:13",
+    "Rate": 110
+}
+
+
+
+##### - payrolls -------------------------------------------------------------------------------------
+### generate all payrolls
+GET http://localhost:3000/api/payroll
+
+
+### GET A PAROLL BY ITS ID
+GET http://localhost:3000/api/payroll/9682cf74-8801-42fc-a801-338d71cc1584
+
+### DELETE A PAYROLL
+DELETE http://localhost:3000/api/payroll/
+
+
+
+#### - advances ------------------------------------------------------------------------------------
+POST http://localhost:3000/api/createAdvance
+Content-Type: application/json
+
+{
+    "EmployeeID": "8dcdff32-03d0-447c-9294-cb6479144ce9", 
+    "Amount": 300
+}
+
+
+##### SCHEDULES ------------------------------------------
+## -- create schedule
+POST http://localhost:3000/api/schedule
+Content-Type: application/json
+
+{
+    "EmployeeID": "7cc982dd-5042-41ea-860b-a424a9e93b8a",
+    "OnLeave": 1,
+    "LeaveDays": 10
+}
+
+### get schedule by id
+GET http://localhost:3000/api/schedule/e4f90aca-d944-4b8a-b4d7-aaafcd4b721d
+
+### update schedule
+PUT http://localhost:3000/api/schedule/e4f90aca-d944-4b8a-b4d7-aaafcd4b721d
+Content-Type: application/json
+
+{
+    "ScheduleID": "e4f90aca-d944-4b8a-b4d7-aaafcd4b721d",
+    "OnLeave": 1,
+    "LeaveDays": 30
+}
