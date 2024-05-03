@@ -1,0 +1,42 @@
+.mainBody {
+  width: 90dvw;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+  .build {
+    margin-top: 3rem;
+    width: 50dvw;
+    height: 50dvh;
+    // border: 2px solid;
+    padding: 10px;
+
+    h1 {
+      // color: #b26aef;
+      background: linear-gradient(to right,#b26aef , #660529);
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+    }
+    .mail {
+      margin-top: 20px;
+      height: 3rem;
+      width: 15rem;
+      background-color: #052d56;
+      padding: 5px;
+      border-style: none;
+    }
+    button {
+      height: 3rem;
+      width: 7rem;
+      background-color: #ff4820;
+      border-style: none;
+    }
+  }
+  .backai{
+    img{
+        width: 35dvw;
+        height: 45dvh;
+    }
+    
+  }
+}

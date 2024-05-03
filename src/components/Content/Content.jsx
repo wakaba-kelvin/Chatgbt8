@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../navbar/navbar'
-import Mainbody from '../mainbody/mainbody'
+import Navbar from '../Navbar/Navbar'
+import Mainbody from '../Mainbody/Mainbody'
 
 function Content() {
   return (
