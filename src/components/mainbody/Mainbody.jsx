@@ -3,6 +3,8 @@ import ai from '../../assets/ai.jpg'
 import "./Mainbody.scss";
 import Middle from "../Middle/Middle";
 import Future from "../Future/Future";
+import Register from "../Register/Register";
+import Footer from "../Footr/Footer";
 
 function Mainbody() {
   return (
@@ -24,6 +26,8 @@ function Mainbody() {
       </div>
       <Middle/>
       <Future/>
+      <Register/>
+      <Footer/>
       
     </div>
   );
