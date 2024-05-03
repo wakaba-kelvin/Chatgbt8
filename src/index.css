@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(220, 235, 14, 0.87);
+  color: rgba(241, 241, 237, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -31,6 +31,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.;
 }
 
 /* body {

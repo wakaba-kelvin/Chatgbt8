@@ -2,6 +2,7 @@ import React from "react";
 import ai from '../../assets/ai.jpg'
 import "./Mainbody.scss";
 import Middle from "../Middle/Middle";
+import Future from "../Future/Future";
 
 function Mainbody() {
   return (
@@ -22,6 +23,7 @@ function Mainbody() {
       </div>
       </div>
       <Middle/>
+      <Future/>
       
     </div>
   );
